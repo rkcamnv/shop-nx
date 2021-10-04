@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { LayoutComponent } from './layout/layout.component';
+import { LayoutComponent } from './layout.component';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { AntdIconProviderModule } from '@shop-nx/antd-icon-provider';
