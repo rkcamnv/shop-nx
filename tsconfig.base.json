@@ -15,10 +15,22 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@shop-nx/antd-icon-provider": ["libs/antd-icon-provider/src/index.ts"],
+      "@shop-nx/data-access": ["libs/data-access/src/index.ts"],
       "@shop-nx/layout": ["libs/layout/src/index.ts"],
       "@shop-nx/products": ["libs/products/src/index.ts"],
+      "@shop-nx/shared/": ["libs/shared/src/index.ts"],
+      "@shop-nx/shared/models": ["libs/shared/models/src/index.ts"],
+      "@shop-nx/shared/router": ["libs/shared/router/src/index.ts"],
+      "@shop-nx/shared/utils/router": ["libs/shared/utils/router/src/index.ts"],
       "@shop-nx/shell": ["libs/shell/src/index.ts"],
-      "@shop-nx/users": ["libs/users/src/index.ts"]
+      "@shop-nx/users": ["libs/users/src/index.ts"],
+      "@shop-nx/users/src/lib/data-access": [
+        "libs/users/src/lib/data-access/src/index.ts"
+      ],
+      "@shop-nx/users/src/lib/services": [
+        "libs/users/src/lib/services/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -28,10 +28,28 @@
     ]
   },
   "projects": {
+    "antd-icon-provider": {
+      "tags": []
+    },
+    "data-access": {
+      "tags": []
+    },
     "layout": {
       "tags": []
     },
     "products": {
+      "tags": []
+    },
+    "shared-": {
+      "tags": []
+    },
+    "shared-models": {
+      "tags": []
+    },
+    "shared-router": {
+      "tags": []
+    },
+    "shared-utils-router": {
       "tags": []
     },
     "shell": {
@@ -45,6 +63,12 @@
       "implicitDependencies": ["shop"]
     },
     "users": {
+      "tags": []
+    },
+    "users-src-lib-data-access": {
+      "tags": []
+    },
+    "users-src-lib-services": {
       "tags": []
     }
   }

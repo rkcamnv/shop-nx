@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { shellWebRoutes } from './shell.routes';
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(shellWebRoutes)],
+  imports: [CommonModule, RouterModule.forRoot(shellWebRoutes)],
+  exports:[RouterModule]
 })
 export class ShellModule {}

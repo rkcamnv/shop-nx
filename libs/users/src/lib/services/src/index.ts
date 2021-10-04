@@ -1,1 +1,1 @@
-export * from './lib/users-src-lib-services';
+export * from './lib/user.service';

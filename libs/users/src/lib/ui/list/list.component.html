@@ -1,3 +1,43 @@
-<p>list users works!</p>
-<button
-  class="btn-user">Hello</button>
+<ng-container *ngIf="vm$ | async as vm">
+  <div [class.content]="true">
+    <nz-table #basicTable [nzData]="vm.users" [nzLoading]="vm.loading">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>City</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of basicTable.data">
+          <td>
+            <span class="cap">{{ data.name.firstname }}</span>
+            &nbsp;
+            <span class="cap">{{ data.name.lastname }}</span>
+          </td>
+          <td>
+            {{ data.email }}
+          </td>
+          <td>
+            {{ data.phone }}
+          </td>
+          <td>
+            <span class="cap"> {{ data.address.city }}</span>
+          </td>
+          <td>
+            <a
+              >Action 一
+              <span class="cap">{{ data.name.firstname }}</span>
+            </a>
+            <nz-divider nzType="vertical"></nz-divider>
+            <a>
+              <span class="text-red">Delete</span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
+</ng-container>

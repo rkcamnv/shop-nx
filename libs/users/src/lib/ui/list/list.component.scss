@@ -1,3 +1,19 @@
 .btn-user{
  @apply py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-400
 }
+
+.content{
+  @apply h-full w-full relative overflow-auto;
+}
+
+nz-table{
+  @apply absolute inset-0;
+}
+
+.cap{
+  @apply capitalize;
+}
+
+.text-red{
+  @apply text-red-600
+}
