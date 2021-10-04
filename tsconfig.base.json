@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@shop-nx/layout": ["libs/layout/src/index.ts"],
+      "@shop-nx/products": ["libs/products/src/index.ts"],
+      "@shop-nx/shell": ["libs/shell/src/index.ts"],
+      "@shop-nx/users": ["libs/users/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
