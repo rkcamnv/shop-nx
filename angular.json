@@ -98,6 +98,50 @@
         }
       }
     },
+    "products-src-lib-data-access": {
+      "root": "libs/products/src/lib/data-access",
+      "sourceRoot": "libs/products/src/lib/data-access/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/products/src/lib/data-access/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/products/src/lib/data-access"],
+          "options": {
+            "jestConfig": "libs/products/src/lib/data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "products-src-lib-service": {
+      "root": "libs/products/src/lib/service",
+      "sourceRoot": "libs/products/src/lib/service/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/products/src/lib/service/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/products/src/lib/service"],
+          "options": {
+            "jestConfig": "libs/products/src/lib/service/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "shared-": {
       "root": "libs/shared/",
       "sourceRoot": "libs/shared/src",

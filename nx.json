@@ -40,6 +40,12 @@
     "products": {
       "tags": []
     },
+    "products-src-lib-data-access": {
+      "tags": []
+    },
+    "products-src-lib-service": {
+      "tags": []
+    },
     "shared-": {
       "tags": []
     },

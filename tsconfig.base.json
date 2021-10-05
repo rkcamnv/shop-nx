@@ -19,6 +19,12 @@
       "@shop-nx/data-access": ["libs/data-access/src/index.ts"],
       "@shop-nx/layout": ["libs/layout/src/index.ts"],
       "@shop-nx/products": ["libs/products/src/index.ts"],
+      "@shop-nx/products/src/lib/data-access": [
+        "libs/products/src/lib/data-access/src/index.ts"
+      ],
+      "@shop-nx/products/src/lib/service": [
+        "libs/products/src/lib/service/src/index.ts"
+      ],
       "@shop-nx/shared/": ["libs/shared/src/index.ts"],
       "@shop-nx/shared/models": ["libs/shared/models/src/index.ts"],
       "@shop-nx/shared/router": ["libs/shared/router/src/index.ts"],

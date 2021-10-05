@@ -1,0 +1,16 @@
+
+.content{
+  @apply h-full w-full relative overflow-auto;
+}
+
+nz-table{
+  @apply absolute inset-0;
+}
+
+.cap{
+  @apply capitalize;
+}
+
+.text-red{
+  @apply transition-all duration-300 text-red-600 hover:text-red-500;
+}
