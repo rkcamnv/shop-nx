@@ -7,8 +7,15 @@ import { ProductEffect } from './data-access/src';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzImageModule } from 'ng-zorro-antd/image';
+import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
+import { DetailComponent } from './ui/detail/detail.component';
 
-const ANT_DESIGN = [NzTableModule, NzDividerModule, NzImageModule];
+const ANT_DESIGN = [
+  NzTableModule,
+  NzDividerModule,
+  NzImageModule,
+  NzPopconfirmModule,
+];
 
 @NgModule({
   imports: [
@@ -19,7 +26,7 @@ const ANT_DESIGN = [NzTableModule, NzDividerModule, NzImageModule];
       { path: '', pathMatch: 'full', component: ListComponent },
     ]),
   ],
-  declarations: [ListComponent],
-  exports: [ListComponent],
+  declarations: [ListComponent, DetailComponent],
+  exports: [ListComponent, DetailComponent],
 })
 export class ProductsModule {}

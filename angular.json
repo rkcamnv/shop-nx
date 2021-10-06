@@ -283,7 +283,10 @@
                 "output": "/assets/"
               }
             ],
-            "styles": ["apps/shop/src/styles.scss"],
+            "styles": [
+              "apps/shop/src/styles.scss",
+              "node_modules/ngx-toastr/toastr.css"
+            ],
             "scripts": []
           },
           "configurations": {

@@ -14,3 +14,7 @@ nz-table{
 .text-red{
   @apply transition-all duration-300 text-red-600 hover:text-red-500;
 }
+
+.text-detail{
+  @apply transition-all duration-300 text-green-600 hover:text-green-500;
+}

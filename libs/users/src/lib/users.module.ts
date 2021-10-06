@@ -7,8 +7,16 @@ import { UserEffect } from '@shop-nx/users/src/lib/data-access';
 
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
+import { DetailComponent } from './ui/detail/detail.component';
+import { NzModalModule } from 'ng-zorro-antd/modal';
 
-const ANT_DESIGN = [NzTableModule,NzDividerModule];
+const ANT_DESIGN = [
+  NzTableModule,
+  NzDividerModule,
+  NzPopconfirmModule,
+  NzModalModule,
+];
 
 @NgModule({
   imports: [
@@ -19,7 +27,7 @@ const ANT_DESIGN = [NzTableModule,NzDividerModule];
       { path: '', pathMatch: 'full', component: ListComponent },
     ]),
   ],
-  declarations: [ListComponent],
-  exports: [ListComponent],
+  declarations: [ListComponent, DetailComponent],
+  exports: [ListComponent, DetailComponent],
 })
 export class UsersModule {}

@@ -8,10 +8,19 @@ import { AkitaNgEffectsModule } from '@datorama/akita-ng-effects';
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
-const AKITA=[
+/** config angular i18n **/
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+registerLocaleData(en);
+
+/** config ng-zorro-antd i18n **/
+import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
+
+const AKITA = [
   environment.production ? [] : AkitaNgDevtools.forRoot(),
-  AkitaNgEffectsModule.forRoot()
+  AkitaNgEffectsModule.forRoot(),
 ];
 
 @NgModule({
@@ -21,9 +30,10 @@ const AKITA=[
     BrowserModule,
     ShellModule,
     HttpClientModule,
-    AKITA
+    ToastrModule.forRoot(),
+    AKITA,
   ],
-  providers: [],
+  providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -33,7 +33,11 @@
           <td>
             <a>Action 一 </a>
             <nz-divider nzType="vertical"></nz-divider>
-            <a>
+            <a
+              nz-popconfirm
+              nzPopconfirmTitle="Are you sure ?"
+              (nzOnConfirm)="deleteProduct(data.id)"
+            >
               <span class="text-red">Delete</span>
             </a>
           </td>

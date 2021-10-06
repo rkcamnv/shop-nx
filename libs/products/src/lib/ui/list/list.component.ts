@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { Actions } from '@datorama/akita-ng-effects';
 import { ProductAction, ProductQuery } from '../../data-access/src';
+import { ID } from '@datorama/akita';
 
 @Component({
   selector: 'shop-nx-list',
@@ -19,5 +20,9 @@ export class ListComponent implements OnInit {
 
   private getProducts() {
     this.actions.dispatch(ProductAction.LoadProducts());
+  }
+
+  public deleteProduct(id: ID){
+    this.actions.dispatch(ProductAction.DeleteProduct({id}));
   }
 }

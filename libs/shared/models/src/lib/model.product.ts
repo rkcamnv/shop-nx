@@ -1,5 +1,7 @@
+import { ID } from '@datorama/akita';
+
 export interface ModelProduct {
-  id: number;
+  id: ID;
   title: string;
   price: string;
   category: string;

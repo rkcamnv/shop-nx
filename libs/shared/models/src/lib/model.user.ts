@@ -1,5 +1,7 @@
+import { ID } from '@datorama/akita';
+
 export interface ModelUser {
-  id: number;
+  id: ID;
   email: string;
   username: string;
   password: string;
